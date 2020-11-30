@@ -1,0 +1,64 @@
+{
+  "app": {
+    "bundleName": "com.harmonyos.onlineedict",
+    "vendor": "harmonyos",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 3
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.harmonyos.onlineedict",
+    "name": ".onlineedict",
+    "reqCapabilities": [
+      "video_support"
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "internet",
+        "usedScene": {
+          "ability": ["com.harmonyos.onlineedict.MainAbility"],
+          "when":"always"
+
+        }
+      }
+    ],
+    "deviceType": [
+      "tv",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "landscape",
+        "formEnabled": false,
+        "name": "com.harmonyos.onlineedict.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "在线电子词典",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

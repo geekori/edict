@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:left_margin="200vp"
+        ohos:right_margin="200vp"
+        ohos:top_margin="40vp"
+        ohos:orientation="vertical">
+        <DirectionalLayout
+            ohos:height="50vp"
+            ohos:width="match_parent"
+
+            ohos:orientation="horizontal">
+            <TextField
+                ohos:id="$+id:textfield_word"
+                ohos:height="match_content"
+                ohos:width="match_parent"
+                ohos:hint="请输入要查询的单词"
+                ohos:background_element="$graphic:border"
+                ohos:weight="1"
+                ohos:padding="2vp"
+                ohos:text_size="30"/>
+            <Image
+                ohos:id="$+id:image_search"
+                ohos:height="30vp"
+                ohos:width="100vp"
+                ohos:image_src="$media:search_word"
+                ohos:scale_mode="zoom_center"
+                />
+
+        </DirectionalLayout>
+        <Text
+            ohos:id="$+id:text_search_result"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:multiple_lines="true"
+            ohos:visibility="hide"
+            ohos:top_margin="40vp"
+            ohos:text_alignment="left|top"
+            ohos:text_size="20vp"
+            />
+        <Image
+            ohos:id="$+id:image"
+            ohos:height="match_parent"
+            ohos:width="match_parent"
+            ohos:padding="60vp"
+            ohos:image_src="$media:gold_medal"
+            ohos:scale_mode="zoom_center"
+            />
+    </DirectionalLayout>
+
+
+</DirectionalLayout>
